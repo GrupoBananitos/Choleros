@@ -187,5 +187,33 @@
 
 
 </footer>
+  <script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const params = new URLSearchParams(window.location.search);
+
+    if (params.get("registro") === "1") {
+
+        // Esperar a que el sistema de registro esté inicializado
+        setTimeout(function () {
+
+            const botonRegistro = document.getElementById("openSubscribe");
+
+            if (botonRegistro) {
+                botonRegistro.click();
+            }
+
+            // Limpiar el parámetro de la URL
+            window.history.replaceState(
+                {},
+                document.title,
+                window.location.pathname
+            );
+
+        }, 500);
+    }
+
+});
+</script>
 </body>
 </html>
