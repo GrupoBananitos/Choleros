@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore the universe with Space Tourism.">
+  <title>Regalos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600&family=Bellefair&family=Barlow:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body class="technology-page">
+  <header class="header">
+    <a href="index.html" class="logo" aria-label="Space Tourism - Home">
+      <img src="assets/images/logo-choclitos-sport.png" alt="Space Tourism">
+    </a>
+    <div class="header-line" aria-hidden="true"></div>
+
+    <button class="menu-toggle" id="menuToggle" type="button"
+      aria-label="Open navigation" aria-expanded="false" aria-controls="navigation">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="navigation" id="navigation" aria-label="Main navigation">
+      <a href="index.html" data-page="home">   INICIO   </a>
+      <a href="deportes.html" data-page="destination">NUESTROS DEPORTES</a>
+      <a href="beneficios.html" data-page="crew">SERVICIOS</a>
+      <a href="regalos.html" data-page="technology">REGALOS</a>
+      <button class="subscribe-button" id="openSubscribe" type="button">
+    REGISTRO
+</button>
+    </nav>
+  </header>
+  <main class="inner-page technology-section">
+    <h1 class="section-title"></span>OFERTAS especiales</h1>
+    <div class="technology-content">
+      <div class="technology-tabs" aria-label="Choose technology">
+        <button class="technology-tab active" data-tech="0" type="button" aria-pressed="true">1</button>
+        <button class="technology-tab" data-tech="1" type="button" aria-pressed="false">2</button>
+        <button class="technology-tab" data-tech="2" type="button" aria-pressed="false">3</button>
+      </div>
+     <section class="technology-info">
+    <p class="technology-subtitle">
+        Suscríbete gratuitamente a Vital Sport Club y recibe un recurso digital totalmente gratis.
+    </p>
+
+    <h2 id="technologyName">Las fijas</h2>
+
+    <p id="technologyDescription">
+        Predicciones para la Champions League
+    </p>
+
+    <button
+        id="btnDescargarRegalo"
+        class="btn-descargar"
+        type="button"
+        data-regalo="las-fijas"
+        onclick="descargarRegalo(this.dataset.regalo)">
+        DESCARGAR REGALO
+    </button>
+    </section>
+      <section class="technology-image-container">
+        <img src="assets/images/regalo-las-fijas.png" alt="Launch vehicle"
+          id="technologyImage" class="technology-image">
+      </section>
+    </div>
+  </main>
+  
+<div class="subscribe-overlay" id="subscribeModal"
+     aria-hidden="true">
+
+    <div class="subscribe-modal"
+         role="dialog"
+         aria-modal="true"
+         aria-labelledby="subscribeTitle">
+
+        <button class="close-modal"
+                id="closeSubscribe"
+                type="button"
+                aria-label="Cerrar ventana">
+            &times;
+        </button>
+
+        <div class="subscribe-content">
+
+            <span class="subscribe-label">
+                CHOCLITOS SPORT
+            </span>
+
+            <h2 id="subscribeTitle">UNETE</h2>
+
+            <p>Suscribete y reciba su regalo.</p>
+
+            <form id="subscribeForm">
+
+                <label for="subscriberEmail">Correo electrónico</label>
+
+                <input
+                    type="email"
+                    id="subscriberEmail"
+                    name="email"
+                    placeholder="Ingresa tu correo electrónico"
+                    autocomplete="email"
+                    required
+                >
+
+                <button type="button" id="btnRegistro" class="submit-subscribe">
+                    REGISTRARME
+                </button>
+
+                <button type="button" id="btnLogin" class="submit-subscribe">
+                    INICIAR SESIÓN
+                </button>
+
+                <button type="button" id="btnCerrarSesion" class="submit-subscribe" hidden>
+                    CERRAR SESIÓN
+                </button>
+
+                <p id="subscribeMessage"
+                   class="subscribe-message"
+                   role="status"
+                   aria-live="polite">
+                </p>
+
+            </form>
+
+            <small>Derechos reservados gaaaaaaa</small>
+
+        </div>
+    </div>
+</div>
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/usuarios.js" defer></script>
+  <div id="football-particles"></div>
+  <div id="football-cursor">
+    <svg viewBox="0 0 100 100">
+        <circle cx="50" cy="50" r="47" fill="white"
+                stroke="#111" stroke-width="3"/>
+
+        <path d="M50 27 L65 38 L59 56 L41 56 L35 38 Z"
+              fill="#111"/>
+
+        <path d="M50 27 L50 4 M65 38 L91 30
+                 M59 56 L75 82 M41 56 L25 82
+                 M35 38 L9 30"
+              stroke="#111" stroke-width="3" fill="none"/>
+
+        <path d="M9 30 L4 50 L25 82 L50 97
+                 L75 82 L96 50 L91 30"
+              stroke="#111" stroke-width="3" fill="none"/>
+    </svg>
+</div>
+<footer class="sport-footer">
+
+    <div class="footer-marquee">
+        <div class="marquee-track">
+
+            <div class="marquee-content">
+                <span> AREQUIPA, Calle Bananitos</span>
+                <b>---</b>
+                <span> +51 999 999 999</span>
+                <b>---</b>
+                <span> contacto@choclitos.com</span>
+                <b>---</b>
+                <span> @choclitos.sport</span>
+                <b>---</b>
+                <span>VIVE EL DEPORTE</span>
+                <b>---</b>
+            </div>
+
+            <div class="marquee-content" aria-hidden="true">
+                <span> AREQUIPA, Calle Bananitos</span>
+                <b>---</b>
+                <span> +51 999 999 999</span>
+                <b>---</b>
+                <span> contacto@choclitos.com</span>
+                <b>---</b>
+                <span> @choclitos.sport</span>
+                <b>---</b>
+                <span>VIVE EL DEPORTE</span>
+                <b>---</b>
+            </div>
+
+        </div>
+    </div>
+
+
+</footer>
+</body>
+</html>

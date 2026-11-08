@@ -1,0 +1,158 @@
+@media (max-width: 175px) {
+  .home-content {
+    margin-top: 60px;
+  }
+
+  .crew-content {
+    gap: 30px;
+  }
+
+  .crew-image-container {
+    height: 400px;
+  }
+
+  .crew-image {
+    max-height: 390px;
+  }
+
+  .technology-content {
+    grid-template-columns: 65px 1fr 1fr;
+    gap: 25px;
+  }
+
+  .technology-image {
+    height: 320px;
+  }
+}
+
+@media (max-width: 768px) {
+    .logo {
+        width: 500px;
+        max-width: 40vw;
+        height: auto;
+        flex-shrink: 0;
+        object-fit: contain;
+    }
+
+  .home-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 50px;
+    margin-top: 50px;
+  }
+
+  .home-text h2 {
+    font-size: 20px;
+  }
+
+  .home-text h1 {
+    font-size: 90px;
+  }
+
+  .home-text p {
+    font-size: 15px;
+  }
+
+  .explore-container {
+    padding: 20px;
+  }
+
+  .explore-button {
+    width: 160px;
+    height: 160px;
+    font-size: 25px;
+  }
+
+  .inner-page {
+    margin-top: 35px;
+    padding: 0 24px;
+    text-align: center;
+  }
+
+  .section-title {
+    font-size: 19px;
+  }
+
+  .crew-content {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    margin-top: 35px;
+  }
+
+  .crew-info {
+    order: 2;
+  }
+
+  .crew-image-container {
+    order: 1;
+    height: 260px;
+    border-bottom: 1px solid rgba(255,255,255,.3);
+  }
+
+  .crew-image {
+    max-height: 250px;
+  }
+
+  .crew-role {
+    font-size: 23px;
+  }
+
+  .crew-info h2 {
+    font-size: 35px;
+  }
+
+  .crew-description {
+    font-size: 15px;
+    min-height: auto;
+  }
+
+  .crew-controls {
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  .technology-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 30px;
+  }
+
+  .technology-image-container {
+    order: 1;
+    width: calc(100% + 48px);
+    margin-left: -24px;
+  }
+
+  .technology-image {
+    height: 230px;
+    max-width: none;
+  }
+
+  .technology-tabs {
+    order: 2;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .technology-tab {
+    width: 48px;
+    height: 48px;
+    font-size: 20px;
+  }
+
+  .technology-info {
+    order: 3;
+  }
+
+  .technology-info h2 {
+    font-size: 30px;
+  }
+
+  .technology-info > p:last-child {
+    font-size: 15px;
+  }
+}
+
+
